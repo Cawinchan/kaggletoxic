@@ -1,14 +1,3 @@
-# git lfs
-
-you must run 
-`git lfs install`
-
-and
-
-`git lfs pull`
-
-to get all the large data files! 
-
 # kaggletoxic
 
 Problem statement : Given a sentence, decide if it is toxic (several variants)
