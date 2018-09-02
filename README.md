@@ -18,15 +18,26 @@ Problem statement : Given a sentence, decide if it is toxic (several variants)
 
 ### 1. How do I turn words into vectors?
 
-#### Solution 1 : Semantics (turn each word into a point, w2v glove)
+
+
+#### Solution 1 : Semantics 
+-W2V GloVe
+https://nlp.stanford.edu/projects/glove/
+
+- fastText
 
 #### Solution 2 : Character level (turn each letter into a point)  
 
 See https://arxiv.org/pdf/1508.06615.pdf
 
-#### Solution 3 : Learn from scratch
+Tweettokenizer
 
-Build our own w2v/character level model
+ 
+
+#### Solution 3 : Learn from scratch
+Explore build our own w2v/character level model
+
+ 
 
 ### 2. How do i turn vectors into decisions?
 
@@ -74,7 +85,36 @@ model.fit(x_train, y_train,
 ```
           
           
-#### Solution 2 : CNN
+#### Solution 2 : CNN (Experimental) 
+
+http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/
+
+#### Solution 3: LDA & LSI (With Tf-IDF Vectors)
+
+LDA(Latent Dirichlet Allocation)
+https://radimrehurek.com/gensim/models/ldamodel.html
+
+LSI(Latent Sematic Indexing)
+https://radimrehurek.com/gensim/models/lsimodel.html
+
+#### Solution 4: LSTM (Experimental)
+
+more info below
+
+#### Solution 5: With already trained models
+- GloVe 
+
+- fastText 
+
+#### Solution 6: Gazette(Bag of bad words)
+
+With some words that can be easily spotted as vulgar or offensive, root out these from the get go.
+
+(However can be used sarcastically or ironically as such a binary/ zero-sum stance should not be taken)
+
+
+
+
 
 
 
@@ -92,3 +132,5 @@ http://karpathy.github.io/2015/05/21/rnn-effectiveness/#recurrent-neural-network
 Sequence classification with LSTM:
 
 https://keras.io/getting-started/sequential-model-guide/
+
+
